@@ -1,5 +1,7 @@
 services:
   web:
     build: .
+    environment:
+      HOST: your-redis-ip
     ports:
-      - "8000:5000"
+      - "80:5000"
