@@ -1,7 +1,7 @@
 services:
   web:
     build: .
-    environment:
-      HOST: your-redis-ip
     ports:
       - "80:5000"
+    env_file: .env
+  
